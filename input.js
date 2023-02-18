@@ -24,21 +24,25 @@ const handleUserInput = function(key) {
 
   // Move up
   if (key === 'w') {
+    console.log("up")
     conn.write('Move: up');
   }
 
   // Move down
   if (key === 's') {
+    console.log("down")
     conn.write('Move: down');
   }
 
   // Move left
   if (key === 'a') {
+    console.log("left")
     conn.write('Move: left');
   }
 
   // Move right
   if (key === 'd') {
+    console.log("right")
     conn.write('Move: right');
   }
 };
