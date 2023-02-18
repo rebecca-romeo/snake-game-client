@@ -22,6 +22,7 @@ const handleUserInput = function(key) {
     process.exit();
   }
 
+  // MOVEMENTS
   // Move up
   if (key === 'w') {
     console.log("up")
@@ -44,6 +45,27 @@ const handleUserInput = function(key) {
   if (key === 'd') {
     console.log("right")
     conn.write('Move: right');
+  }
+
+  // MESSAGES
+
+
+  // hi greeting
+  if (key === 'h') {
+    console.log("hi")
+    conn.write('Say: Hi');
+  }
+
+  // lets play
+  if (key === 'p') {
+    console.log("Let's play!")
+    conn.write('Say: Lets play!');
+  }
+
+  // cheer
+  if (key === 'c') {
+    console.log("Yesss, score!")
+    conn.write('Say: Yesss, score!');
   }
 };
 
