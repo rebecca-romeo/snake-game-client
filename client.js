@@ -17,10 +17,12 @@ const connect = function() {
 
   conn.on("connect", () => {
 
+    // Snake goes off screen:
     // setInterval(() => {
     //   conn.write("Move: up");
     // }, 50);
 
+    // Snake moves up incrementally:
     setTimeout(() => {
       conn.write("Move: up");
     }, 50);
