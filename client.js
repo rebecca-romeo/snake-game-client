@@ -14,33 +14,33 @@ const connect = function() {
     conn.write("Name: REB");
   });
 
-// ------ Automatic snake movement on connection
+  // ------ Automatic snake movement on connection
 
-// Commented out the following because we don't want the snake to automatically move each time it's connected:
+  // Commented out the following because we don't want the snake to automatically move each time it's connected:
 
   // conn.on("connect", () => {
 
-    // Snake goes off screen:
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 50);
+  //   // Snake goes off screen:
+  //   // setInterval(() => {
+  //   //   conn.write("Move: up");
+  //   // }, 50);
 
-    // Snake moves up incrementally:
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 50);
+  //   // Snake moves up incrementally:
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 50);
 
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 100);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 100);
 
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 150);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 150);
 
-    // setTimeout(() => {
-    //   conn.write("Move: up");
-    // }, 200);
+  //   setTimeout(() => {
+  //     conn.write("Move: up");
+  //   }, 200);
 
   // });
 
@@ -59,8 +59,8 @@ const connect = function() {
   return conn;
 };
 
-console.log("Connecting ...");
-connect();
+// console.log("Connecting ...");
+// connect();
 
 module.exports = {
   connect
