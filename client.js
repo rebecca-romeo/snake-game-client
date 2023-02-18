@@ -14,8 +14,11 @@ const connect = function() {
     conn.write("Name: REB");
   });
 
+// ------ Automatic snake movement on connection
 
-  conn.on("connect", () => {
+// Commented out the following because we don't want the snake to automatically move each time it's connected:
+
+  // conn.on("connect", () => {
 
     // Snake goes off screen:
     // setInterval(() => {
@@ -23,23 +26,27 @@ const connect = function() {
     // }, 50);
 
     // Snake moves up incrementally:
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 50);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 50);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 100);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 100);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 150);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 150);
 
-    setTimeout(() => {
-      conn.write("Move: up");
-    }, 200);
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 200);
 
-  });
+  // });
+
+  // ----- End comment for automatic snake movement
+
+
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
