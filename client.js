@@ -10,7 +10,33 @@ const connect = function() {
 
   conn.on("connect", () => {
     console.log("success, connected");
+    // Displays snake name after connecting
     conn.write("Name: REB");
+  });
+
+
+  conn.on("connect", () => {
+
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 50);
+
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 100);
+
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 150);
+
+    setTimeout(() => {
+      conn.write("Move: up");
+    }, 200);
+
   });
 
   // interpret incoming data as text
